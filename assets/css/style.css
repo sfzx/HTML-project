@@ -138,7 +138,7 @@ span.firstword {
 	padding: 25px;
 	top: 100%;
 	left: 25%;
-	transform: translate(-75%, -100%);
+	transform: translate(-75%, -127%);
 	text-align: center;
 	font-weight: 300;
 	background-color: #ffffff;
@@ -151,6 +151,8 @@ span.firstword {
 
 .Send_message_box input[type = "text"],.Send_message_box input[type = "email"]  {
 	width: 95%;
+	font-family: 'Open sans';
+	font-size: 15px;
 	border: 0;
 	border-bottom: 1px solid #c7c7c7;
 	background: none;
@@ -164,7 +166,11 @@ span.firstword {
 }
 
 .Send_message_box textarea {
-	width: 95%;
+	max-width: 95%;
+	min-width: 95%;
+	font-family: 'Open sans';
+	font-size: 15px;
+	resize: none;
 	border: 0;
 	border-bottom: 1px solid #c7c7c7;
 	background: none;
@@ -185,7 +191,7 @@ span.firstword {
 	border-radius: 27px;
 	background: #ff5c36;
 	color: #ffd6cd;
-	margin: 20px auto;
+	margin: 0 auto;
 
 }
 
@@ -453,8 +459,10 @@ span.firstword {
 	font-size: 30px;
 	font-weight: 600;
 	color: #4c4c4c;
+}
 
-	/* display: none; */
+.name-dist {
+	padding-top: 30%
 }
 
 .profesion {
@@ -478,6 +486,7 @@ span.firstword {
 
 .info:hover {
 	background-color: #fff3f0;
+	transition: 0.3s linear;
 }
 
 .info:hover .more__info {
@@ -489,35 +498,38 @@ span.firstword {
 	display: none;
 }
 
-.statistic {
+.statistic-title {
 	font-size: 11px;
-	color: #000;
-	padding-bottom: 23px;
+	padding: 6px 0 2px 0;
 }
 
-.statistic:first-child {
-	padding-top: 38%;
+.statistic-title:first-child {
+	padding-top: 40%;
 }
 
 .statistic--dist{
 	padding-bottom: 80px;
+	background-color: #fff3f0;
 }
 
-.statistic:after {
+.statistic {
 	margin: 0 auto;
-	content: "";
-	display: block;
 	width: 150px;
 	height: 4px;
-	/* top: 8px; */
-	/* margin: 17px 0; */
-	background-color: #ff5c36;
+	background-color: #707070;
+	border-radius: 2px;
+}
+
+.statistic-bar {
+	width: 80%;
+	height: 4px;
+	background-color: #ff6e47;
+	border-right: 2px;
 }
 
 .more__info a {
 	display: inline-block;
 	vertical-align: middle;
 	text-decoration: none;
-
 	color: #494949;
 }
