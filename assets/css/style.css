@@ -1,6 +1,6 @@
 body {
 	background-color: #f5f5f5;
-	background-size: cover;
+	/* background-size: cover; */
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
 	/* line-height: 1.6; */
@@ -553,6 +553,145 @@ span.firstword {
 	color: #494949;
 }
 
+
+/* Client Said (Slaider) */
+
+.slider {
+	max-width: 1115px;
+	position: relative;
+	margin: auto;
+	/* overflow: hidden; */
+}
+
+.slide {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* .slide {
+	display: flex;
+	
+}
+ */
+
+
+.client_slide {
+	width: 536px;
+	border: 1px solid #d3d3d3;
+	/* margin: 0 10px; */
+	text-align: center;
+	font-family: 'Source Sans Pro';
+	font-size: 17px;
+	font-weight: 400;
+	color: #707070;
+	transition: 0.5s;
+}
+
+.client_slide:hover {
+	border: none;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	transition: 0.5s;
+}
+
+.client_img {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.client_respond {
+	margin: 0 46px;
+	line-height: 1.5;
+	transform: translateY(-20px);
+}
+
+.client_rating {
+	font-size: 12px;
+	color: #ffef3b;
+	/* margin: 20px 0; */
+}
+
+.client {
+	font-style: italic;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.client span {
+	font-style: normal;
+	font-weight: 600;
+	color: #000000
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	transition: 0.6s ease;
+	text-align: center;
+	font-size: 17px;
+	color: black;
+	border-radius: 50%;
+	background-color: white;
+	user-select: none;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	top: 50%;
+	transform: translate(-80%, -50%);
+}
+
+.prev i, .next i {
+	margin-top: 15px;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	transform: translate(80%, -50%);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: #ff6e47;
+	color: white;
+}
+
+.dots{
+	padding-top: 50px;
+	text-align: center;
+}
+
+.dot {
+	cursor: pointer;
+	height: 7px;
+	width: 18px;
+	margin: 0 8px;
+	background-color: #bbb;
+	border-radius: 2.5px;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #ff6e47;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 /* Logos */
 
